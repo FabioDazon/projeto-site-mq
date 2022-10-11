@@ -5,89 +5,107 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 :root{
-   --color1:#F2AE30;
-   --color2:#43AED9;
-   --color3:#A66375;
-   --color4:#D90416;
-   --color5:#D96725;
+   --color1:#0D0D0D;
+   --color2:#2999df;
+   --color3:#0477BF;
+   --color4:#044D8C;
+   --color5:#0468BF;
    --color6:white;
 }
-body, html{
-    background-color:var(--color3);
-   
+body{
+    background-color: var(--color5);
 }
-
 header{
-    background-color:var(--color1);
-    margin-bottom:  100px;
+    background-color:var(--color2);
+    
 }
 header h1{
-    color: var(--color4);
+    padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
-    text-shadow:  -2px 2px 2px white;
-
-}
-
-header li{
-    background-color: var(--color5);
-    color: yellow;
-    margin: 5px;
-    padding: 8px;
-    border-radius: 10px;
-    
-    
-}
-li:hover{
-    background-color:rgb(255, 255, 0);
     color: var(--color1);
+}
+
+.menu-principal  a{
+    text-decoration: none;
+    color: var(--color6);
+    
+    
+}
+.menu-principal  ul{
+    background-color: #0D0D0D;
+    font-weight: bolder;
+    
+    
+    
+    
+}
+.menu-principal ul a:hover{
+    color: var(--color1);
+    
+}
+.menu-principal > ul > li{
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    margin: 5px;
+    
+}
+ .li1:hover{
+    background-color:#3583f8;
+    opacity: 1;
+    transition: .3s;
+    
+    
+}
+
+
+/*sub menu*/
+.menu-principal ul .sub{
+    background-color: var(--color1);
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    width: 150px;
+    padding: 5px;
+    list-style-type: none;
+    left: 0;
+        
+      
+}
+
+
+
+.menu-principal ul li:hover .sub{
+    display: block;
+    
+    
+}
+.sub li:hover{
+    background-color: var(--color3);
+    color: var(--color1);
+    padding-left: 5px;
     transition: .5s;
+    font-weight: bolder;
+
     
 }
 main{
-    background-color:var(--color6);
+    
     margin: 20px;
-    padding: 10px;
+    background-color: rgb(248, 248, 248);
+    padding: 15px;
     border-radius: 15px;
-   
-}
-main  p{
-    text-indent: 20px;
-    text-align: justify;
-}
-.menu1{
-    position: relative;
-    display: inline-block;
-}
+ 
+ 
 
-   
-  
-   
-
-.menu2 > li{
-    background-color: #d96725cc;
-    
-    
 }
-a{
-    text-decoration: none;
-    color: rgb(26, 7, 78);
-    font-weight: bold;
+ main h2{
+   margin-bottom: 10px;
+ }
+ main p{
+    text-indent: 15px;
+    margin-bottom: 20px;
     
-}
-.submenu{
-    display:none;
-    width:200px;
-    margin-top: 40px;
-   list-style-type: none;
-  
-   
-}
-.visivel{
-    
-  
-  display: inline-block;
-  position: absolute;
-  
-}
+ }
