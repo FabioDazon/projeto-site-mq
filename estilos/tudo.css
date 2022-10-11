@@ -19,7 +19,7 @@ body{
 }
 header{
     background-color:var(--color2);
-    
+    margin-bottom: 20px;
 }
 header h1{
     padding: 20px;
@@ -92,8 +92,10 @@ header h1{
     
 }
 main{
+    margin: auto;
+    width: 90vw;
+    width: 768px;
     
-    margin: 20px;
     background-color: rgb(248, 248, 248);
     padding: 15px;
     border-radius: 15px;
